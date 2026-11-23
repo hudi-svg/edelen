@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edelen Doors & Windows | Frame Your World</title>
+  <meta name="description" content="Portland's trusted window and door experts since 1977. Visit our complete showroom or schedule a free consultation." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            edelen: '#005399',
+            silver: '#787878',
+            ink: '#1f2933',
+            mist: '#f3f6f8'
+          },
+          fontFamily: {
+            sans: ['Inter', 'Arial', 'sans-serif'],
+            display: ['Georgia', 'serif']
+          },
+          boxShadow: {
+            soft: '0 18px 50px rgba(20, 43, 62, .10)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', Arial, sans-serif; }
+    .display { font-family: 'Playfair Display', Georgia, serif; }
+    .eyebrow { letter-spacing: .18em; }
+    .hero-overlay { background: linear-gradient(90deg, rgba(13,31,43,.68) 0%, rgba(13,31,43,.30) 48%, rgba(13,31,43,.03) 100%); }
+    .image-placeholder { background-color: #e8edf0; }
+    .image-placeholder img { transition: transform .7s ease; }
+    .image-placeholder:hover img { transform: scale(1.035); }
+    .nav-link { transition: color .2s ease; }
+    .nav-link:hover { color: #005399; }
+    .section-pad { padding-top: 6rem; padding-bottom: 6rem; }
+    .brand-marquee {
+      overflow: hidden;
+    }
+    .brand-track {
+      display: flex;
+      width: max-content;
+      animation: brand-scroll 24s linear infinite;
+      will-change: transform;
+    }
+    .brand-set {
+      display: flex;
+      align-items: center;
+      gap: 3.5rem;
+      padding-right: 3.5rem;
+      white-space: nowrap;
+    }
+    .brand-set span {
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .brand-logo {
+      flex-shrink: 0;
+      height: 42px;
+      width: 150px;
+      object-fit: contain;
+    }
+    .brand-logo-large {
+      width: 170px;
+    }
+    .proof-icon {
+      display: flex;
+      width: 3.25rem;
+      height: 3.25rem;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #dce5ea;
+      border-radius: 9999px;
+      background: #f8fafb;
+      color: #005399;
+    }
+    .proof-icon svg {
+      width: 1.65rem;
+      height: 1.65rem;
+    }
+    .brand-marquee:hover .brand-track {
+      animation-play-state: paused;
+    }
+    @keyframes brand-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (max-width: 767px) {
+      .section-pad { padding-top: 4rem; padding-bottom: 4rem; }
+      .brand-set { gap: 2.25rem; padding-right: 2.25rem; }
+      .brand-logo {
+        height: 34px;
+        width: 120px;
+      }
+      .brand-logo-large {
+        width: 145px;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-ink antialiased">
+  <!--
+    EDELEN HOMEPAGE MOCKUP
+    Image notes:
+    - Replace every Unsplash image with properly licensed client photography / stock before submission.
+    - Reference numbers point to the user's supplied mood-board collage (1–15).
+    - Those numbered images are visual references only; do NOT reuse the watermarked images themselves.
+    - Logo: use the supplied Edelen logo artwork unchanged, saved as assets/edelen-logo.png.
+  -->
+
+  <!-- TOP CONTACT BAR -->
+  <div class="hidden border-b border-slate-200 bg-slate-50 text-xs text-slate-600 md:block">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5">
+      <p>Serving Portland homeowners with care since 1977</p>
+      <div class="flex items-center gap-6">
+        <span>700 NE 102nd Ave, Portland, OR</span>
+        <a href="tel:5032556552" class="font-semibold text-edelen hover:underline">503-255-6552</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-3.5 lg:px-6">
+      <a href="#home" class="flex shrink-0 items-center" aria-label="Edelen Doors and Windows home">
+        <!-- LOGO: Use the supplied Edelen logo EXACTLY as provided. Do not redraw or recolor. -->
+        <img src="logo.jpg" alt="Edelen Doors & Windows — Since 1977" class="h-14 w-auto object-contain md:h-[68px]" />
+      </a>
+
+      <nav class="hidden items-center gap-5 text-[13px] font-semibold text-slate-700 xl:flex">
+        <a class="nav-link" href="#windows">Windows</a>
+        <a class="nav-link" href="#doors">Doors</a>
+        <a class="nav-link" href="#garage-doors">Garage Doors</a>
+        <a class="nav-link" href="#milgard">Milgard</a>
+        <a class="nav-link" href="#repairs">Repairs</a>
+        <a class="nav-link" href="#showroom">Showroom</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex shrink-0 items-center gap-3">
+        <a href="tel:5032556552" class="hidden text-sm font-bold text-edelen lg:block">503-255-6552</a>
+        <a href="#contact" class="rounded-sm bg-edelen px-4 py-3 text-xs font-bold uppercase tracking-wider text-white shadow-sm transition hover:bg-sky-900 sm:px-5">Free Consultation</a>
+      </div>
+    </div>
+    <nav class="flex gap-5 overflow-x-auto border-t border-slate-100 px-5 py-2.5 text-xs font-semibold text-slate-600 xl:hidden">
+      <a class="whitespace-nowrap" href="#windows">Windows</a><a class="whitespace-nowrap" href="#doors">Doors</a>
+      <a class="whitespace-nowrap" href="#garage-doors">Garage Doors</a><a class="whitespace-nowrap" href="#milgard">Milgard</a>
+      <a class="whitespace-nowrap" href="#repairs">Repairs</a><a class="whitespace-nowrap" href="#showroom">Showroom</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- HERO
+      IMAGE SLOT 01 — Main hero image.
+      Use a wide, bright, lived-in living room with a large picture window framing a lush Pacific Northwest garden.
+      Mood-board references: #1, #6, #9, #13. Best match: #1 or #9.
+      Search keywords: "bright upscale living room picture window lush green garden view Pacific Northwest home".
+      Recommended crop: wide 16:9 or 2:1; keep the window/view visible on the RIGHT so text remains readable on the LEFT.
+    -->
+    <section class="relative isolate min-h-[620px] overflow-hidden bg-slate-800 md:min-h-[690px]">
+      <img src="living-room.webp"
+           alt="Bright contemporary living room with a large window overlooking a green garden"
+           class="absolute inset-0 -z-20 h-full w-full object-cover object-center" />
+      <div class="hero-overlay absolute inset-0 -z-10"></div>
+      <div class="mx-auto flex min-h-[620px] max-w-7xl items-center px-6 py-20 md:min-h-[690px]">
+        <div class="max-w-2xl text-white">
+          <p class="eyebrow mb-6 text-xs font-bold uppercase text-white/85">Portland's window & door experts since 1977</p>
+          <h1 class="display max-w-xl text-5xl leading-[1.08] md:text-7xl">The window makes <em class="font-medium">the view.</em></h1>
+          <p class="mt-7 max-w-lg text-lg leading-8 text-white/90 md:text-xl">Bring more light, comfort and beauty into the place you call home. Find the right windows and doors with a local team you can trust.</p>
+          <div class="mt-9 flex flex-wrap items-center gap-4">
+            <a href="#contact" class="inline-flex items-center bg-white px-7 py-4 text-sm font-bold uppercase tracking-wider text-edelen transition hover:bg-slate-100">Free Consultation <span class="ml-4 text-lg">→</span></a>
+            <a href="#showroom" class="text-sm font-semibold text-white underline decoration-white/70 underline-offset-8 hover:decoration-white">Visit our showroom</a>
+          </div>
+          <div class="mt-14 flex items-center gap-3 text-sm text-white/90">
+            <span class="h-px w-10 bg-white/70"></span>
+            Family owned. Portland proud. Here since 1977.
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 right-0 hidden bg-white px-8 py-5 text-right md:block">
+        <p class="text-xs font-bold uppercase tracking-[.16em] text-edelen">A better view starts here</p>
+        <p class="mt-1 text-sm text-slate-500">Windows · Doors · Expert installation</p>
+      </div>
+    </section>
+
+    <!-- TRUST / SHOWROOM / MILGARD QUICK PROOF -->
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl divide-y divide-slate-200 px-6 md:grid-cols-3 md:divide-x md:divide-y-0">
+        <div class="flex items-center gap-4 py-6 md:px-7 md:first:pl-0">
+          <span class="proof-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="16" r="11"/>
+              <path d="M16 9v7l5 3"/>
+              <path d="M16 5v2M16 25v2M5 16h2M25 16h2"/>
+              <path d="M10.5 21.5c3.1 2.5 7.9 2.5 11 0"/>
+              <circle cx="16" cy="16" r="1.4" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <div><p class="text-sm font-bold">Since 1977</p><p class="mt-1 text-xs text-slate-500">Locally trusted for generations</p></div>
+        </div>
+        <div class="flex items-center gap-4 py-6 md:px-7">
+          <span class="proof-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 27V13l11-7 11 7v14"/>
+              <path d="M9 27V15h14v12"/>
+              <path d="M16 15v12M9 21h14"/>
+              <circle cx="19.5" cy="24" r=".8" fill="currentColor" stroke="none"/>
+              <path d="M3 27h26"/>
+            </svg>
+          </span>
+          <div><p class="text-sm font-bold">Portland's complete showroom</p><p class="mt-1 text-xs text-slate-500">Walk in. See it. Try it.</p></div>
+        </div>
+        <div class="flex items-center gap-4 py-6 md:px-7 md:pr-0">
+          <span class="proof-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="4" width="22" height="24" rx="1"/>
+              <path d="M16 4v24M5 16h22"/>
+              <path d="M21.5 11.5l2 2 4-5"/>
+              <circle cx="18.5" cy="21" r=".8" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <div><p class="text-sm font-bold">Featured Milgard dealer</p><p class="mt-1 text-xs text-slate-500">Quality products, expertly installed</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MILGARD FEATURE
+      IMAGE SLOT 02 — Product/lifestyle image for Milgard C700.
+      Use a contemporary home with large fiberglass windows or a patio door, preferably showing slim frames and natural light.
+      Mood-board references: #4, #11, #12. #11/#12 are technical profile references; use an actual product/lifestyle photo here.
+      Search keywords: "Milgard C700 fiberglass windows patio doors modern home exterior".
+      Add official Milgard logo asset as assets/milgard-logo.svg/png; use logo only in this section.
+    -->
+    <section id="milgard" class="bg-[#f3f5f6]">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[.9fr_1.1fr] lg:py-20">
+        <div class="order-2 lg:order-1">
+          <p class="eyebrow text-xs font-bold uppercase text-edelen">Featured partner</p>
+          <div class="mt-4 flex items-center gap-4">
+            <!-- Milgard logo belongs only in this feature section. -->
+            <img src="Milgard-logo.png" alt="Milgard Windows & Doors" class="h-10 w-auto object-contain" />
+            <span class="h-8 w-px bg-slate-300"></span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Windows & Doors</span>
+          </div>
+          <h2 class="display mt-7 text-4xl leading-tight text-slate-900 md:text-5xl">Designed for the way you live.</h2>
+          <p class="mt-5 max-w-xl leading-7 text-slate-600">Discover the Milgard C700 Fiberglass Series — beautifully crafted fiberglass windows and patio doors made for lasting performance and a refined finish.</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <span class="border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-600">6 exterior colors</span>
+            <span class="border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-600">Fiberglass windows</span>
+            <span class="border border-slate-300 bg-white px-4 py-2 text-xs font-semibold text-slate-600">Patio doors</span>
+          </div>
+          <p class="mt-5 text-sm font-semibold text-slate-800">Engineered for the 21st century.</p>
+          <a href="#contact" class="mt-8 inline-flex items-center bg-edelen px-6 py-4 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-sky-900">Explore Milgard <span class="ml-5 text-lg">→</span></a>
+        </div>
+        <div class="image-placeholder order-1 overflow-hidden shadow-soft lg:order-2">
+          <img src="expansive windows and natural light.png"
+               alt="Contemporary home with expansive windows and natural light" class="h-[360px] w-full object-cover md:h-[470px]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWROOM
+      IMAGE SLOT 03 — Real showroom photo preferred, because this is a key differentiator.
+      The client says attached showroom photos are for reference, but no showroom image is present in this mood-board collage.
+      Ask client for a current showroom photo or use a clearly labeled temporary placeholder.
+      Search keywords if a temporary stock image is needed: "window door showroom interior display sample windows doors".
+    -->
+    <section id="showroom" class="section-pad">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-[1.05fr_.95fr]">
+        <div class="image-placeholder relative overflow-hidden">
+          <img src="large windows.png"
+               alt="Bright residential interior with large windows" class="h-[390px] w-full object-cover md:h-[500px]" />
+          <div class="absolute bottom-5 left-5 bg-white px-5 py-4 shadow-soft">
+            <p class="text-xs font-bold uppercase tracking-widest text-edelen">Come see the difference</p>
+            <p class="mt-1 text-sm text-slate-600">No appointment needed</p>
+          </div>
+        </div>
+        <div>
+          <p class="eyebrow text-xs font-bold uppercase text-edelen">Experience it in person</p>
+          <h2 class="display mt-5 text-4xl leading-tight text-slate-900 md:text-5xl">Portland's only complete door & window showroom.</h2>
+          <p class="mt-6 text-lg leading-8 text-slate-600">Walk in, see it, touch it, open and close it before you buy. Compare styles, explore finishes and get helpful advice from our local team.</p>
+          <div class="mt-8 border-l-2 border-edelen pl-5">
+            <p class="font-bold text-slate-900">Edelen Doors & Windows</p>
+            <p class="mt-2 text-sm leading-6 text-slate-600">700 NE 102nd Ave<br>Portland, OR 97220</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600"><strong class="text-slate-800">Mon–Fri:</strong> 8:00 AM–5:00 PM<br><strong class="text-slate-800">Saturday:</strong> 9:00 AM–12:00 PM</p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://www.google.com/maps/search/?api=1&query=700+NE+102nd+Ave+Portland+OR+97220" target="_blank" rel="noopener" class="inline-flex items-center border border-edelen px-6 py-4 text-xs font-bold uppercase tracking-widest text-edelen transition hover:bg-edelen hover:text-white">Get Directions <span class="ml-5">↗</span></a>
+            <a href="tel:5032556552" class="inline-flex items-center px-2 py-4 text-sm font-bold text-slate-700 hover:text-edelen">Call 503-255-6552</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATEGORIES
+      IMAGE SLOTS 04–11 — Use a consistent photographic treatment and similar crop for all cards.
+      04 Windows: bright picture window / garden view. Mood refs #1, #6, #9, #13.
+      05 Entry Doors: elegant wood or fiberglass front entry door. Search: "modern wood front entry door residential exterior".
+      06 Patio Doors: sliding or French patio doors opening to garden. Mood refs #5, #10, #15.
+      07 Garage Doors: upscale residential garage door on house. Search: "modern residential garage door exterior".
+      08 Interior Doors: refined interior door detail. Search: "modern interior wood doors architectural detail".
+      09 Screen & Storm Doors: close-up of screen/storm door on porch. Search: "screen storm door residential porch".
+      10 Accordion Doors: folding glass wall opening to outdoor patio. Search: "accordion folding glass doors open patio home".
+      11 Locks & Hardware: refined door handle / lock detail. Search: "modern architectural door hardware brushed metal close up".
+      Mood refs #7/#8/#11/#12 can inspire product details/materials, but don't reuse watermarked images.
+    -->
+    <section id="windows" class="section-pad bg-mist">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="eyebrow text-xs font-bold uppercase text-edelen">Made for your home</p>
+          <h2 class="display mt-4 text-4xl text-slate-900 md:text-5xl">Find the right fit for every room.</h2>
+          <p class="mt-5 leading-7 text-slate-600">Thoughtful choices, lasting quality and expert guidance — from the first look to the final installation.</p>
+        </div>
+
+        <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <a href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Large picture window.png" alt="Large picture window overlooking green garden" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Windows</h3><p class="mt-1 text-xs text-slate-500">Bring the outside in</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+          <a id="doors" href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Elegant modern residential entry door.png" alt="Elegant modern residential entry door" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Entry Doors</h3><p class="mt-1 text-xs text-slate-500">A beautiful first impression</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+          <a href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Patio doors opening to a landscaped outdoor space.png" alt="Patio doors opening to a landscaped outdoor space" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Patio Doors</h3><p class="mt-1 text-xs text-slate-500">Open up your space</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+          <a id="garage-doors" href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Contemporary home exterior with garage.png" alt="Contemporary home exterior with garage" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Garage Doors</h3><p class="mt-1 text-xs text-slate-500">Function meets curb appeal</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+          <a href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Minimal modern interior with architectural details.png" alt="Minimal modern interior with architectural details" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Interior Doors</h3><p class="mt-1 text-xs text-slate-500">Details that define a room</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+          <a href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Bright home entrance with glass door.png" alt="Bright home entrance with glass door" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Screen & Storm Doors</h3><p class="mt-1 text-xs text-slate-500">Comfort in every season</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+          <a href="https://accordiondoorstore.com/" target="_blank" rel="noopener" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Wide folding glass doors connecting interior and patio.png" alt="Wide folding glass doors connecting interior and patio" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Accordion Doors</h3><p class="mt-1 text-xs text-slate-500">Make room for more</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">↗</span></div>
+          </a>
+          <a href="#contact" class="group overflow-hidden bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="image-placeholder overflow-hidden"><img src="Modern home detail and finish.png" alt="Modern home detail and finish" class="h-52 w-full object-cover" /></div>
+            <div class="flex items-center justify-between p-5"><div><h3 class="font-bold">Locks & Hardware</h3><p class="mt-1 text-xs text-slate-500">The finishing touch</p></div><span class="text-xl text-edelen transition group-hover:translate-x-1">→</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPAIR & INSTALLATION
+      IMAGE SLOT 12 — Realistic close-up of a skilled technician carefully repairing or installing a residential window/door.
+      Avoid staged thumbs-up or cheesy contractor stock.
+      Search keywords: "professional window repair technician residential window installation close up hands craftsmanship".
+      Mood-board #11/#12 are construction/profile details, not installer photos.
+    -->
+    <section id="repairs" class="section-pad">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
+        <div class="order-2 lg:order-1">
+          <p class="eyebrow text-xs font-bold uppercase text-edelen">More than products</p>
+          <h2 class="display mt-4 text-4xl leading-tight text-slate-900 md:text-5xl">The right team makes all the difference.</h2>
+          <p class="mt-5 max-w-xl leading-7 text-slate-600">From a stubborn window to a brand-new garage door, our experienced local team is here to help keep your home working beautifully.</p>
+          <div class="mt-8 grid gap-x-8 gap-y-5 sm:grid-cols-2">
+            <div class="border-t border-slate-200 pt-4"><h3 class="font-bold">Window Repair</h3><p class="mt-1 text-sm leading-6 text-slate-500">Restore comfort, operation and peace of mind.</p></div>
+            <div class="border-t border-slate-200 pt-4"><h3 class="font-bold">Door Repair</h3><p class="mt-1 text-sm leading-6 text-slate-500">Get the fit, function and security back.</p></div>
+            <div class="border-t border-slate-200 pt-4"><h3 class="font-bold">Window & Door Installation</h3><p class="mt-1 text-sm leading-6 text-slate-500">Professional installation for a lasting result.</p></div>
+            <div class="border-t border-slate-200 pt-4"><h3 class="font-bold">Garage Door Installation & Repair</h3><p class="mt-1 text-sm leading-6 text-slate-500">Reliable service for one of your home's biggest moving parts.</p></div>
+          </div>
+          <a href="#contact" class="mt-8 inline-flex items-center bg-edelen px-6 py-4 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-sky-900">Talk with our team <span class="ml-5 text-lg">→</span></a>
+        </div>
+        <div class="image-placeholder order-1 overflow-hidden lg:order-2">
+          <img src="Professional tradesperson working carefully on a home improvement project.png"
+               alt="Professional tradesperson working carefully on a home improvement project" class="h-[390px] w-full object-cover md:h-[520px]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY EDELEN -->
+    <section id="about" class="bg-[#f3f6f8]">
+      <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+        <div class="grid gap-12 lg:grid-cols-[.85fr_1.15fr]">
+          <div>
+            <p class="eyebrow text-xs font-bold uppercase text-edelen">A name you can feel good about</p>
+            <h2 class="display mt-4 text-4xl leading-tight text-slate-900 md:text-5xl">Local knowledge. Lasting craftsmanship.</h2>
+            <p class="mt-6 leading-7 text-slate-600">For more than four decades, Edelen has helped Portland-area homeowners make their homes more comfortable, beautiful and secure.</p>
+          </div>
+          <div class="grid gap-8 sm:grid-cols-2">
+            <div class="border-t-2 border-edelen pt-5"><p class="display text-4xl text-edelen">1977</p><h3 class="mt-2 font-bold">Rooted in Portland</h3><p class="mt-2 text-sm leading-6 text-slate-500">Family-owned service and local experience spanning generations.</p></div>
+            <div class="border-t-2 border-edelen pt-5"><p class="display text-4xl text-edelen">01</p><h3 class="mt-2 font-bold">Certified Installers</h3><p class="mt-2 text-sm leading-6 text-slate-500">Skilled professionals who care about the details.</p></div>
+            <div class="border-t-2 border-edelen pt-5"><p class="display text-4xl text-edelen">Care</p><h3 class="mt-2 font-bold">Labor Guarantee</h3><p class="mt-2 text-sm leading-6 text-slate-500">Supported by our labor guarantee and manufacturer warranties.</p></div>
+            <div class="border-t-2 border-edelen pt-5"><p class="display text-4xl text-edelen">Local</p><h3 class="mt-2 font-bold">A Team Nearby</h3><p class="mt-2 text-sm leading-6 text-slate-500">A Portland team ready to help you choose with confidence.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section class="section-pad">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="text-center">
+          <p class="eyebrow text-xs font-bold uppercase text-edelen">Good words from good neighbors</p>
+          <h2 class="display mt-4 text-4xl text-slate-900 md:text-5xl">Built on trust. Shared by neighbors.</h2>
+        </div>
+        <!-- Replace these sample review cards with verified customer reviews from the client. Do not submit invented testimonials as real. -->
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <blockquote class="bg-mist p-8">
+            <p class="text-2xl tracking-[.15em] text-edelen">★★★★★</p>
+            <p class="mt-5 display text-xl leading-8 text-slate-800">“A helpful team made the whole process feel simple.”</p>
+            <footer class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-500">Customer review placeholder</footer>
+          </blockquote>
+          <blockquote class="bg-mist p-8">
+            <p class="text-2xl tracking-[.15em] text-edelen">★★★★★</p>
+            <p class="mt-5 display text-xl leading-8 text-slate-800">“We love the difference our new windows made.”</p>
+            <footer class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-500">Customer review placeholder</footer>
+          </blockquote>
+          <blockquote class="bg-mist p-8">
+            <p class="text-2xl tracking-[.15em] text-edelen">★★★★★</p>
+            <p class="mt-5 display text-xl leading-8 text-slate-800">“Great service from a local company that knows its products.”</p>
+            <footer class="mt-6 text-xs font-bold uppercase tracking-widest text-slate-500">Customer review placeholder</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS
+      BRAND LOGOS: use official brand logo files, consistent visual height, preferably monochrome gray.
+      Brands named in brief: Milgard, Sierra Pacific, Simpson, Therma-Tru, Masonite, Rogue Valley Door, Wayne-Dalton, Larson.
+      Do not invent additional dealer relationships.
+    -->
+    <section class="border-y border-slate-200 bg-white py-12">
+      <div class="mx-auto max-w-7xl px-6">
+        <p class="eyebrow text-center text-xs font-bold uppercase text-slate-500">Quality brands we carry</p>
+        <div class="brand-marquee mt-8">
+          <div class="brand-track">
+            <div class="brand-set">
+              <img src="Milgard-logo.png" alt="Milgard" class="brand-logo brand-logo-large" />
+              <img src="sierra-pacific.PNG" alt="Sierra Pacific" class="brand-logo" />
+              <img src="simpson-logo.PNG" alt="Simpson" class="brand-logo" />
+              <img src="Therma-true.PNG" alt="Therma-Tru" class="brand-logo" />
+              <img src="masonite-logo.PNG" alt="Masonite" class="brand-logo" />
+              <img src="Rogue-Valley-logo.PNG" alt="Rogue Valley Door" class="brand-logo brand-logo-large" />
+              <img src="Wayne-dalton-logo.PNG" alt="Wayne Dalton" class="brand-logo" />
+              <img src="larson-logo.PNG" alt="Larson" class="brand-logo" />
+            </div>
+            <div class="brand-set" aria-hidden="true">
+              <img src="Milgard-logo.png" alt="" class="brand-logo brand-logo-large" />
+              <img src="sierra-pacific.PNG" alt="" class="brand-logo" />
+              <img src="simpson-logo.PNG" alt="" class="brand-logo" />
+              <img src="Therma-true.PNG" alt="" class="brand-logo" />
+              <img src="masonite-logo.PNG" alt="" class="brand-logo" />
+              <img src="Rogue-Valley-logo.PNG" alt="" class="brand-logo brand-logo-large" />
+              <img src="Wayne-dalton-logo.PNG" alt="" class="brand-logo" />
+              <img src="larson-logo.PNG" alt="" class="brand-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA
+      IMAGE SLOT 13 — Pacific Northwest neighborhood/home exterior with evergreen trees, garden and soft daylight.
+      Mood-board references: #1, #4, #6, #9, #13.
+      Search keywords: "Portland Oregon craftsman home evergreen trees neighborhood exterior".
+    -->
+    <section class="section-pad bg-mist">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-[1fr_.8fr]">
+        <div>
+          <p class="eyebrow text-xs font-bold uppercase text-edelen">Proudly serving our neighbors</p>
+          <h2 class="display mt-4 text-4xl leading-tight text-slate-900 md:text-5xl">Portland is home. Let us help make yours even better.</h2>
+          <p class="mt-5 max-w-xl leading-7 text-slate-600">Our team serves homeowners throughout Portland and surrounding communities. Get in touch to talk about your project and confirm service availability in your area.</p>
+          <p class="mt-6 text-sm font-semibold leading-7 text-slate-700">Portland · Beaverton · Gresham · Lake Oswego · Tigard · Vancouver and nearby communities</p>
+          <a href="#contact" class="mt-8 inline-flex items-center text-xs font-bold uppercase tracking-widest text-edelen hover:underline">Ask about your area <span class="ml-4 text-lg">→</span></a>
+        </div>
+        <div class="image-placeholder overflow-hidden">
+          <img src="Welcoming Pacific Northwest style home.png"
+               alt="Welcoming Pacific Northwest style home" class="h-[330px] w-full object-cover md:h-[400px]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA / CONTACT -->
+    <section id="contact" class="relative overflow-hidden bg-edelen">
+      <div class="absolute -right-20 -top-24 h-80 w-80 rounded-full border border-white/10"></div>
+      <div class="absolute -right-8 -top-12 h-56 w-56 rounded-full border border-white/10"></div>
+      <div class="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:py-20 lg:grid-cols-[.85fr_1.15fr]">
+        <div class="relative z-10 text-white">
+          <p class="eyebrow text-xs font-bold uppercase text-white/70">Your next chapter starts with a better view</p>
+          <h2 class="display mt-5 text-4xl leading-tight md:text-6xl">Let's frame your world.</h2>
+          <p class="mt-6 max-w-md text-lg leading-8 text-white/85">Tell us a little about your project. Our team will be happy to help you explore the possibilities.</p>
+          <div class="mt-10 border-t border-white/25 pt-6">
+            <p class="text-xs font-bold uppercase tracking-widest text-white/65">Prefer to talk?</p>
+            <a href="tel:5032556552" class="mt-2 inline-block text-2xl font-semibold text-white hover:underline">503-255-6552</a>
+          </div>
+        </div>
+        <form class="relative z-10 grid gap-4 bg-white p-6 shadow-soft md:grid-cols-2 md:p-8" onsubmit="event.preventDefault(); alert('Thank you! This visual mockup form is not connected yet.');">
+          <div class="md:col-span-2"><h3 class="text-xl font-bold text-slate-900">Request a free consultation</h3><p class="mt-1 text-sm text-slate-500">Share a few details and we'll be in touch.</p></div>
+          <label class="text-xs font-semibold text-slate-600">Name<input required type="text" placeholder="Your name" class="mt-2 w-full border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-edelen" /></label>
+          <label class="text-xs font-semibold text-slate-600">Phone<input required type="tel" placeholder="503-555-0123" class="mt-2 w-full border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-edelen" /></label>
+          <label class="text-xs font-semibold text-slate-600 md:col-span-2">Email<input required type="email" placeholder="you@example.com" class="mt-2 w-full border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-edelen" /></label>
+          <label class="text-xs font-semibold text-slate-600 md:col-span-2">What can we help with?
+            <select class="mt-2 w-full border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-edelen">
+              <option>Select a project type</option><option>Windows</option><option>Entry or patio doors</option><option>Garage doors</option><option>Repair</option><option>Other</option>
+            </select>
+          </label>
+          <label class="text-xs font-semibold text-slate-600 md:col-span-2">Tell us about your project<textarea rows="3" placeholder="A few details about what you have in mind..." class="mt-2 w-full resize-y border border-slate-300 px-4 py-3 text-sm outline-none transition focus:border-edelen"></textarea></label>
+          <div class="md:col-span-2"><button type="submit" class="w-full bg-edelen px-6 py-4 text-xs font-bold uppercase tracking-widest text-white transition hover:bg-sky-900">Send consultation request <span class="ml-3">→</span></button><p class="mt-3 text-center text-[11px] text-slate-400">Form is a front-end mockup and must be connected to the website's form service.</p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#172b3a] text-white">
+    <div class="mx-auto grid max-w-7xl gap-10 px-6 py-12 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+      <div>
+        <!-- Use the exact supplied logo; if it is dark/blue, place it on a white logo tile. -->
+        <div class="inline-flex bg-white p-2"><img src="logo.jpg" alt="Edelen Doors & Windows" class="h-20 w-auto object-contain" /></div>
+        <p class="mt-5 max-w-xs text-sm leading-6 text-white/65">Helping Portland homeowners see more, live comfortably and love their homes since 1977.</p>
+      </div>
+      <div><h3 class="text-xs font-bold uppercase tracking-widest text-white/90">Explore</h3><ul class="mt-5 space-y-3 text-sm text-white/65"><li><a class="hover:text-white" href="#windows">Windows</a></li><li><a class="hover:text-white" href="#doors">Doors</a></li><li><a class="hover:text-white" href="#garage-doors">Garage Doors</a></li><li><a class="hover:text-white" href="#milgard">Milgard</a></li></ul></div>
+      <div><h3 class="text-xs font-bold uppercase tracking-widest text-white/90">Support</h3><ul class="mt-5 space-y-3 text-sm text-white/65"><li><a class="hover:text-white" href="#repairs">Repairs & Installation</a></li><li><a class="hover:text-white" href="#showroom">Visit Showroom</a></li><li><a class="hover:text-white" href="#about">About Edelen</a></li><li><a class="hover:text-white" href="#contact">Contact</a></li></ul></div>
+      <div><h3 class="text-xs font-bold uppercase tracking-widest text-white/90">Get in touch</h3><p class="mt-5 text-sm leading-7 text-white/65">700 NE 102nd Ave<br>Portland, OR 97220</p><a href="tel:5032556552" class="mt-3 inline-block text-sm font-bold text-white">503-255-6552</a><p class="mt-3 text-xs text-white/55">Mon–Fri 8–5 · Sat 9–12</p></div>
+    </div>
+    <div class="border-t border-white/10"><div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-5 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between"><p>© 2026 Edelen Doors & Windows. All rights reserved.</p><p>Portland, Oregon · Family owned since 1977</p></div></div>
+  </footer>
+</body>
+</html>
